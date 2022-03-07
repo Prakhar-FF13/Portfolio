@@ -6,16 +6,16 @@
     "start": "next start"
   },
   "dependencies": {
-    "esbuild": "^0.12.26",
+    "esbuild": "^0.14.25",
     "gray-matter": "^4.0.3",
-    "mdx-bundler": "^6.0.1",
+    "mdx-bundler": "^8.0.1",
     "next": "latest",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-is": "^17.0.2",
-    "styled-components": "^5.2.3"
+    "styled-components": "^5.3.3"
   },
   "devDependencies": {
-    "babel-plugin-styled-components": "^1.12.0"
+    "babel-plugin-styled-components": "^2.0.6"
   }
 }
