@@ -7,11 +7,12 @@ import { bundleMDX } from "mdx-bundler";
  * @param {String} currentWorkingDirectory - where the file is located
  * @returns code and frontmatter
  */
-export const prepareMDX = async (mdxFile, currentWorkingDirectory) => {
+export const prepareMDX = async (mdxFile, fileDirectory) => {
   try {
     // bundle the mdx file and other things together.
-    const { code, frontmatter } = await bundleMDX(mdxFile, {
-      cwd: currentWorkingDirectory,
+    const { code, frontmatter } = await bundleMDX({
+      file: mdxFile,
+      cwd: fileDirectory,
     });
     return {
       code,
@@ -30,6 +31,8 @@ export const prepareMDX = async (mdxFile, currentWorkingDirectory) => {
  * @returns filenames without extension
  *
  * Function generates slugs for dynamic routes - all files in a folder are dynamic routes.
+ *
+ * returns all filenames in the folder without extensions to be used as slug.
  */
 export const getAllSlugs = (folder) => {
   try {
@@ -49,22 +52,6 @@ export const getAllSlugs = (folder) => {
   } catch (e) {
     console.log("\n***********\n");
     console.log("Error in getAllSlugs Function");
-    console.log(e.message);
-    console.log("\n***********\n");
-  }
-};
-
-/**
- *
- * @param {String} fileName - filename with extension which is to be loaded.
- * @returns file in string format.
- */
-export const getAFile = (fileName) => {
-  try {
-    return fs.readFileSync(fileName + ".mdx");
-  } catch (e) {
-    console.log("\n***********\n");
-    console.log("Error in getAFile Function");
     console.log(e.message);
     console.log("\n***********\n");
   }
