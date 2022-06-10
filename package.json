@@ -3,7 +3,8 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "svg": "svgr -d components/ components/svgs --svgo-config ./svgo.config.js"
   },
   "dependencies": {
     "esbuild": "^0.14.25",
@@ -16,6 +17,7 @@
     "styled-components": "^5.3.3"
   },
   "devDependencies": {
+    "@svgr/cli": "^6.2.1",
     "babel-plugin-styled-components": "^2.0.6"
   }
 }

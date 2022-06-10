@@ -6,7 +6,8 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: "#1C1C1C";
+    background-color: #1C1C1C;
+    color: #FFFFFF;
   }
 `;
 

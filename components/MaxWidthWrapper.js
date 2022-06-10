@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export default (props, children) => {
+export default ({ children }) => {
   return <MaxWidthWrapper>{children}</MaxWidthWrapper>;
 };
 
