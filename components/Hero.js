@@ -23,16 +23,12 @@ const Text1 = styled.div`
   font-size: 32px;
   line-height: 120.5%;
   letter-spacing: -0.03em;
-  background-image: linear-gradient(
-    90deg,
-    #7443ff 0%,
-    rgba(255, 135, 243, 0.7) 100%
-  );
-  background-size: 100%;
-  background-clip: text;
+
+  background: linear-gradient(90deg, #7443ff 0%, rgba(255, 135, 243, 0.7) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 `;
 
 const Text2 = styled.div`
@@ -77,8 +73,9 @@ export default () => {
           Web developer with Specialization in Machine and Deep Learning.
         </Text2>
         <Text3>
-          I build applications using React, Node JS. I specialize in working
-          with Machine Learning and Deep Learning to solve business problems.
+          I build applications using React JS and Node JS. I specialize in
+          working with Machine Learning and Deep Learning to solve business
+          problems.
         </Text3>
       </TextContainer>
       <PatternContainer>
