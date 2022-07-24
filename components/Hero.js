@@ -17,7 +17,6 @@ const PatternContainer = styled.div`
 `;
 
 const Text1 = styled.div`
-  font-size: 24px;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
@@ -31,6 +30,8 @@ const Text1 = styled.div`
   );
   background-size: 100%;
   background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   color: transparent;
 `;
 
@@ -39,7 +40,7 @@ const Text2 = styled.div`
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  font-size: 48px;
+  font-size: 64px;
   line-height: 120.5%;
   letter-spacing: -0.03em;
   background: linear-gradient(
@@ -50,6 +51,8 @@ const Text2 = styled.div`
   );
   background-size: 100%;
   background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   color: transparent;
 `;
 
@@ -58,7 +61,7 @@ const Text3 = styled.div`
   max-width: 70%;
   font-family: "Montserrat";
   font-style: normal;
-  font-weight: 700;
+  font-weight: bold;
   font-size: 16px;
   line-height: 120.5%;
   letter-spacing: -0.03em;
